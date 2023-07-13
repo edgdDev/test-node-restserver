@@ -18,7 +18,8 @@ const dbConnection = async () => {
 
     } catch (error) {
         console.log( error );
-        throw new Error('Error en la base de datos');
+        // throw new Error('Error en la base de datos');
+        throw new Error( error );
     }
 
 }
